@@ -1,6 +1,6 @@
 # 🌟 Coletor de Sorrisos - Game Educacional
 
-O **Coletor de Sorrisos** é um jogo web desenvolvido com foco em humanização hospitalar, criado especificamente para as crianças em tratamento no **Hospital Amaral Carvalho**. O objetivo principal é oferecer distração, entretenimento e regulação emocional através de mecânicas simples e reforço positivo.
+O **Coletor de Sorrisos** é um jogo web desenvolvido com foco em humanização hospitalar, criado para as crianças em tratamento no **Hospital Amaral Carvalho**. O objetivo principal é oferecer distração, entretenimento e regulação emocional através de mecânicas simples e reforço positivo.
 
 ---
 
