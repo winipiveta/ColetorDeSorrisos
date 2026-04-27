@@ -58,6 +58,7 @@ O projeto foi construído utilizando tecnologias web puras para garantir leveza 
 1. Clone este repositório ou baixe os arquivos.
 2. Abra o arquivo `index.html` em qualquer navegador moderno.
 3. Divirta-se e espalhe sorrisos!
+4. Link para page view: https://winipiveta.github.io/ColetorDeSorrisos/
 
 ---
 *Este projeto foi desenvolvido com carinho para transformar o tempo de espera em tempo de alegria.*
