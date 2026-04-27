@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coletor de Sorrisos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-container">
+    <header class="top-bar">
+      <h1>Coletor de Sorrisos</h1>
+      <button id="settingsBtn" class="icon-btn" aria-label="Abrir configurações">⚙</button>
+    </header>
+
+    <section id="mapScreen" class="screen">
+      <section class="message-board" aria-live="polite">
+        <p id="motivationMessage">Escolha um caminho mágico e siga coletando sorrisos!</p>
+      </section>
+      <section class="pet-shelf" aria-live="polite">
+        <h3>Meus Pets</h3>
+        <div id="petShelfItems" class="pet-shelf-items"></div>
+      </section>
+      <section class="route-map">
+        <div class="route-line"></div>
+        <button class="phase-node forest-node" data-phase="1">
+          <div class="phase-reward" id="reward-1" aria-hidden="true">🎁</div>
+          <div class="node-number">1</div>
+          <span>Jardim das Estrelinhas</span>
+          <small class="node-theme">Floresta Encantada</small>
+          <div class="phase-stars" id="stars-1">☆☆☆</div>
+          <div class="phase-badge" id="badge-1">Em progresso</div>
+        </button>
+        <button class="phase-node beach-node" data-phase="2">
+          <div class="phase-reward" id="reward-2" aria-hidden="true">🎁</div>
+          <div class="node-number">2</div>
+          <span>Lago dos Corações</span>
+          <small class="node-theme">Praia dos Abraços</small>
+          <div class="phase-stars" id="stars-2">☆☆☆</div>
+          <div class="phase-badge" id="badge-2">Em progresso</div>
+        </button>
+        <button class="phase-node ice-node" data-phase="3">
+          <div class="phase-reward" id="reward-3" aria-hidden="true">🎁</div>
+          <div class="node-number">3</div>
+          <span>Céu dos Sorrisos</span>
+          <small class="node-theme">Mapa de Gelo Mágico</small>
+          <div class="phase-stars" id="stars-3">☆☆☆</div>
+          <div class="phase-badge" id="badge-3">Em progresso</div>
+        </button>
+      </section>
+      <p class="menu-note">Conclua uma fase para desbloquear a próxima.</p>
+    </section>
+
+    <section id="gameScreen" class="screen" hidden>
+      <section class="hud" aria-live="polite">
+        <div class="hud-item"><span>Fase:</span> <strong id="currentLevel">-</strong></div>
+        <div class="hud-item"><span>Pontos:</span> <strong id="score">0</strong></div>
+        <div class="hud-item"><span>Recorde da fase:</span> <strong id="highScore">0</strong></div>
+        <div class="hud-item"><span>Meta:</span> <strong id="objective">-</strong></div>
+      </section>
+
+      <section class="game-area">
+        <canvas id="gameCanvas" aria-label="Área do jogo Coletor de Sorrisos"></canvas>
+      </section>
+    </section>
+
+    <section id="settingsPanel" class="settings-panel" hidden>
+      <h2>Menu de pausa</h2>
+      <p class="settings-motivation">Voce e incrivel! Ajuste tudo com carinho e continue brilhando.</p>
+      <div class="settings-group">
+        <button id="audioBtn" class="action-btn">Som: ligado</button>
+      </div>
+      <div class="settings-actions">
+        <button id="resumeBtn" class="action-btn">Continuar</button>
+        <button id="backToMenuBtn" class="action-btn">Voltar ao menu</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
